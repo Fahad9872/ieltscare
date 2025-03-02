@@ -170,7 +170,18 @@ const NavBar = () => {
               <p
                 className={`${text} text-[#000000] text-[16px] mx-3 cursor-pointer`}
               >
-                Blog
+                Success Story
+              </p>
+            </div>
+            <div
+              onClick={() => {
+                router.push(`/blogs`);
+              }}
+            >
+              <p
+                className={`${text} text-[#000000] text-[16px] mx-3 cursor-pointer`}
+              >
+                Contact Us
               </p>
             </div>
           </nav>

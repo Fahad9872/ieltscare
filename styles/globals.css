@@ -6,3 +6,25 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+
+ .rec.rec-arrow-right {
+  color: #FE0000 !important;
+  background-color: #ffffff !important;
+  box-shadow: 2px 2px 2px 2px rgb(210, 221, 224);
+}
+ .rec.rec-arrow-right:hover {
+  color: #FE0000 !important;
+  background-color: #ffffff !important;
+  box-shadow: 2px 2px 2px 2px rgb(210, 221, 224);
+}
+ .rec.rec-arrow-left {
+  color: #FE0000 !important;
+  background-color: #ffffff !important;
+  box-shadow: 2px 2px 2px 2px rgb(210, 221, 224);
+}
+ .rec.rec-arrow-left:hover {
+  color: #FE0000 !important;
+  background-color: #ffffff !important;
+  box-shadow: 2px 2px 2px 2px rgb(210, 221, 224);
+}

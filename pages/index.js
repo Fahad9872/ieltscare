@@ -8,6 +8,9 @@ import ChooseOstello from "@/components/Home/ChooseOstello";
 import EducationalResources from "@/components/Home/EducationalResources";
 import Carousel from "react-elastic-carousel";
 import Banner2 from "@/components/Home/Banner2";
+import Faq from "@/components/Shared/Faq";
+import Vision from "@/components/Home/Vision";
+import SuccessStory from "@/components/Home/SuccessStory";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +32,11 @@ export default function Home() {
           <Banner2 />
         </Carousel>
       </div>
-
+      <Vision/>
+      <SuccessStory/>
       <ChooseOstello />
       <EducationalResources />
+      <Faq/>
       <Footer />
       {/* <DragAndDrop /></div> */}
     </div>

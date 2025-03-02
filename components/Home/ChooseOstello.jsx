@@ -15,7 +15,7 @@ const ChooseOstello = () => {
           </h1>
         </div>
         <h1 className=" font-bold text-4xl p-4 text-center ">
-          Learn Smart, Grow Fast – Choose Ostello!{" "}
+          Learn Smart, Grow Fast – Choose IELTScare!{" "}
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-2 md:mx-20">
