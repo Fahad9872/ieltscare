@@ -188,7 +188,7 @@ const NavBar = () => {
               }}
               className="bg-[#FE0000] text-white px-5 py-3 font-medium rounded-[20px]"
             >
-              Download Ostello App
+              Start Preparing Now
             </button>
           </div>
         ) : (
@@ -267,7 +267,7 @@ const NavBar = () => {
                   }}
                   className="bg-[#FE0000] text-white px-5 py-3 font-medium rounded-[20px]"
                 >
-                  Download Ostello App
+                  Start Preparing Now
                 </button>
               </div>
             ) : (
