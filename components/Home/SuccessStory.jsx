@@ -44,22 +44,21 @@ const SuccessStory = () => {
   ];
   const { screenWidth } = useScreenWidth();
 
-
   return (
     <div>
       {data?.length ? (
         <>
           <div className="py-5 ">
-           
             <p className="px-5 text-[35px] text-[#414141]  font-bold">
-            NOT JUST MORE SUCCESS STORIES THAN ANY OTHER IELTS SCHOOL, 10X MORE!
+              NOT JUST MORE SUCCESS STORIES THAN ANY OTHER IELTS SCHOOL, 10X
+              MORE!
             </p>
             <p className="px-5 md:w-3/4 my-5  text-[18px] text-[#888888]">
-            Find out why from our success stories below.
+              Find out why from our success stories below.
             </p>
 
             <div className={"px-5"}>
-              <div className="md:max-w-[1400px] md:mx-auto md:py-5 ">
+              <div className=" md:py-5 ">
                 <Carousel
                   renderPagination={({ pages, activePage, onClick }) => {
                     return (
@@ -70,7 +69,7 @@ const SuccessStory = () => {
                             <div
                               className={`cursor-pointer  h-2 rounded-md my-5 transition-all duration-500 ease-in-out ${
                                 isActivePage
-                                  ? "bg-[#FE0000] md:w-28 w-16 "
+                                  ? "bg-[#f2496a] md:w-28 w-16 "
                                   : "bg-gray/20 md:w-6 w-2"
                               }`}
                               key={i}
@@ -146,9 +145,7 @@ const SuccessStory = () => {
                             <img
                               className="  
                           w-full min-h-[230px] max-h-[244px]  rounded-xl mb-2"
-                              src={
-                                item?.image
-                              }
+                              src={item?.image}
                               alt=""
                             />
                           )}
@@ -187,11 +184,10 @@ const SuccessStory = () => {
                             // onClick={() => {
                             //     router.push('/scheduleSession')
                             // }}
-                            className={`font-medium text-sm xl:text-base w-max  p-1 px-2 text-[#FE0000] border-2 rounded  border-[#FE0000] transition-transform duration-500 ease-in-out hover:shadow-3xl hover:scale-[1.1] mt-7`}
+                            className={`font-medium text-sm xl:text-base w-max  p-1 px-2 text-[#f2496a] border-2 rounded  border-[#f2496a] transition-transform duration-500 ease-in-out hover:shadow-3xl hover:scale-[1.1] mt-7`}
                           >
                             Schedule a session
                           </p> */}
-                            
                           </div>
                         </div>
 
@@ -204,8 +200,6 @@ const SuccessStory = () => {
                 </Carousel>
               </div>
             </div>
-
-           
           </div>
         </>
       ) : (

@@ -4,51 +4,51 @@ import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 
 const FAQsData = [
-    {
-      id: 1,
-      question: "Why should I choose IELTScare?",
-      answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
+  {
+    id: 1,
+    question: "Why should I choose IELTScare?",
+    answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
           IELTScare provides an all-in-one platform for IELTS preparation, including personalized study plans, practice tests, and expert guidance. We offer comprehensive study materials and mock tests to help you achieve your desired band score.
         </p>`,
-    },
-    {
-      id: 2,
-      question: "What courses does IELTScare offer?",
-      answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
+  },
+  {
+    id: 2,
+    question: "What courses does IELTScare offer?",
+    answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
           IELTScare offers courses for all four IELTS sections: Listening, Reading, Writing, and Speaking. We provide self-paced courses, live coaching sessions, and one-on-one mentorship to cater to different learning styles.
         </p>`,
-    },
-    {
-      id: 3,
-      question: "How does IELTScare help with IELTS Speaking?",
-      answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
+  },
+  {
+    id: 3,
+    question: "How does IELTScare help with IELTS Speaking?",
+    answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
           IELTScare provides AI-powered speaking assessments, live mock interviews with certified trainers, and real-time feedback to improve fluency, pronunciation, and confidence for the IELTS Speaking test.
         </p>`,
-    },
-    {
-      id: 4,
-      question: "Does IELTScare offer mock tests?",
-      answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
+  },
+  {
+    id: 4,
+    question: "Does IELTScare offer mock tests?",
+    answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
           Yes! IELTScare offers full-length IELTS mock tests that simulate the real exam experience. Our mock tests help you assess your strengths and weaknesses and provide detailed performance analysis.
         </p>`,
-    },
-    {
-      id: 5,
-      question: "Who can use IELTScare’s services?",
-      answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
+  },
+  {
+    id: 5,
+    question: "Who can use IELTScare’s services?",
+    answer: `<p className="text-[#645D69] md:text-[18px] text-[13px] p-4 md:leading-8 leading-[25px]">
           IELTScare’s services are available to anyone preparing for the IELTS exam, whether you're a student, working professional, or planning to migrate abroad. Our courses are designed for both Academic and General Training candidates.
         </p>`,
-    },
-  ];
-  
+  },
+];
+
 const Faq = () => {
-    const [isOpen, setIsOpen] = useState([]);
+  const [isOpen, setIsOpen] = useState([]);
   return (
     <div className="    md:p-5 px-5">
       <div className=" space-y-5 text-center">
         <p className="md:text-[48px] font-semibold  text-[24px]">
           For more understanding, visit{" "}
-          <span className="font-bold text-[#FE0000]">FAQs</span>
+          <span className="font-bold text-[#f2496a]">FAQs</span>
         </p>
         {/* <p className="md:text-[18px] text-[14px] font-[400px] mx-auto text-[#725F88]  max-w-[700px] md:leading-[35px] leading-[25px]">
           FAQs enable you to deal with specific queries that your students have
@@ -81,7 +81,6 @@ const Faq = () => {
                     <CiCircleMinus className="text-primary " />
                   ) : (
                     <CiCirclePlus />
-                    
                   )}
                 </span>
               </div>
@@ -97,6 +96,6 @@ const Faq = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Faq
+export default Faq;

@@ -11,12 +11,12 @@ export default function Banner() {
       <div className=" mx-auto md:px-16 px-3  flex flex-col lg:flex-row items-end bg-purple-50 md:max-w-[1740px] mx-auto rounded-[20px]">
         {/* Text content */}
         <div className="lg:w-7/12 py-5 lg:py-16">
-          <div className="mb-4 text-[#FE0000] font-medium md:text-sm text-[12px] border border-[#FE0000] rounded-[20px] w-fit px-3 py-1 ">
+          <div className="mb-4 text-[#f2496a] font-medium md:text-sm text-[12px] border border-[#f2496a] rounded-[20px] w-fit px-3 py-1 ">
             ⭐ Your Gateway to IELTS Success
           </div>
           <p className="text-[24px] md:text-[45px] font-semibold md:leading-[50px] leading-[30px] mb-6">
             Achieve Your Dream Score with{" "}
-            <span className="text-[#FE0000]">IELTScare</span>{" "}
+            <span className="text-[#f2496a]">IELTScare</span>{" "}
             <br className="md:block hidden" /> The Ultimate IELTS Preparation
             Platform
           </p>
@@ -33,21 +33,21 @@ export default function Banner() {
             onClick={() => {
               router.push("/");
             }}
-            className="bg-[#FE0000] text-white md:px-16 px-10 rounded-[20px] py-3 "
+            className="bg-[#f2496a] text-white md:px-16 px-10 rounded-[20px] py-3 "
           >
             Start Preparing Now
           </button>
         </div>
 
         {/* Image content */}
-        <div className="lg:w-5/12 md:mt-[-50px] flex justify-center w-min-h-[420px]">
+        <div className="lg:w-5/12 md:my-[50px] flex justify-center w-min-h-[420px]">
           <Image
             width={550}
             height={420}
             sizes="(max-width: 768px) 100vw, 550px"
             priority={true} // If the image isn't above the fold, set priority to false
             fetchPriority="high"
-            src={Banner.src}
+            src={banner.src}
             alt="Ostello App Mockup"
             // Retaining z-index only
           />

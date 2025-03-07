@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-    <div className="md:max-w-[1440px] mx-auto ">
+    <div className="md:max-w-[1400px] md:mx-auto">
       <NavBar />
       <div className="mb-5">
         <Carousel itemsToShow={1} showArrows={false} loop={true}>
@@ -32,11 +32,11 @@ export default function Home() {
           <Banner2 />
         </Carousel>
       </div>
-      <Vision/>
-      <SuccessStory/>
+      <Vision />
+      <SuccessStory />
       <ChooseOstello />
       <EducationalResources />
-      <Faq/>
+      <Faq />
       <Footer />
       {/* <DragAndDrop /></div> */}
     </div>

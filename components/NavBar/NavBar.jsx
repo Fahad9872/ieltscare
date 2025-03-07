@@ -10,7 +10,7 @@ import { GoChevronDown } from "react-icons/go";
 import { FiArrowRight } from "react-icons/fi";
 
 const NavBar = () => {
-  const text = `hover:text-[#FE0000]`;
+  const text = `hover:text-[#f2496a]`;
 
   const router = useRouter();
 
@@ -24,30 +24,34 @@ const NavBar = () => {
 
   const examData = [
     {
-      title: "CUET Exam",
-      description: "For UG, PG, Research Programs",
+      title: "IELTS Writing Task 1",
+      description: "Describe visual data clearly and accurately.",
       link: "/cuet",
     },
     {
-      title: "IIT-JEE Exam",
-      description: "UG Engineering Exam",
+      title: "IELTS Writing Task 2",
+      description: "Write essays expressing your opinions effectively.",
       link: "/iit-jee",
     },
     {
-      title: "School Preparation",
-      description: "for 6th to 12th exam",
+      title: "IELTS Speaking",
+      description: "Demonstrate fluency and pronunciation in a conversation.",
       link: "/school-preparation",
     },
     {
-      title: "NEET Exam",
-      description: "UG medical admissions.",
+      title: "IELTS Listening",
+      description: "Understand spoken English in various situations.",
       link: "/neet",
     },
-    { title: "CLAT Exam", description: "Law entrance exam", link: "/clat" },
     {
-      title: "Defence Exams",
-      description: "Defence exams",
+      title: "IELTS Vocabulary",
+      description: "Improve vocabulary for better IELTS performance.",
       link: "/defence-exams",
+    },
+    {
+      title: "IELTS Reading",
+      description: "Comprehend academic texts effectively.",
+      link: "/ielts-reading",
     },
   ];
 
@@ -77,7 +81,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="md:max-w-[1440px] mx-auto ">
       <div
         className={`flex justify-between items-center md:px-10 px-3 py-3 bg-white`}
       >
@@ -105,7 +109,7 @@ const NavBar = () => {
               }}
             >
               <p
-                className={`${text}  text-[16px] font-semibold text-[#FE0000] mx-3 cursor-pointer`}
+                className={`${text}  text-[16px] font-semibold text-[#f2496a] mx-3 cursor-pointer`}
               >
                 Home
               </p>
@@ -122,7 +126,7 @@ const NavBar = () => {
                 }}
                 className="flex items-center mx-3 cursor-pointer"
               >
-                <p className="text-[#000000] text-[16px]">Exams we cover</p>
+                <p className="text-[#000000] text-[16px]">Resources</p>
                 {topLocationBar ? (
                   <GoChevronDown className="ml-1 text-[16px] rotate-180" />
                 ) : (
@@ -175,7 +179,7 @@ const NavBar = () => {
             </div>
             <div
               onClick={() => {
-                router.push(`/blogs`);
+                router.push(`/contact-us`);
               }}
             >
               <p
@@ -197,7 +201,7 @@ const NavBar = () => {
                   "https://play.google.com/store/apps/details?id=com.ostello.mentors.mentorify"
                 );
               }}
-              className="bg-[#FE0000] text-white px-5 py-3 font-medium rounded-[20px]"
+              className="bg-[#f2496a] text-white px-5 py-3 font-medium rounded-[20px]"
             >
               Start Preparing Now
             </button>
@@ -224,10 +228,10 @@ const NavBar = () => {
                 )
               }
             >
-              <div className="bg-[#FE0000] h-10 w-10 rounded-full flex items-center justify-center p-1 text-white cursor-pointer ">
+              <div className="bg-[#f2496a] h-10 w-10 rounded-full flex items-center justify-center p-1 text-white cursor-pointer ">
                 {userName?.slice(0, 1).toUpperCase()}
               </div>
-              <p className="text-[#FE0000] text-lg ml-2 cursor-pointer">
+              <p className="text-[#f2496a] text-lg ml-2 cursor-pointer">
                 {!isEmpty(userName) && capitalizeFirstLetter(userName)}
               </p>
             </div>
@@ -235,7 +239,7 @@ const NavBar = () => {
         )}
 
         <div className="md:hidden block">
-          <div className="bg-[#FE0000] rounded px-3 py-2">
+          <div className="bg-[#f2496a] rounded px-3 py-2">
             <AiOutlineMenu
               className="text-white cursor-pointer"
               size={20}
@@ -276,7 +280,7 @@ const NavBar = () => {
                       "https://play.google.com/store/apps/details?id=com.ostello.mentors.mentorify"
                     );
                   }}
-                  className="bg-[#FE0000] text-white px-5 py-3 font-medium rounded-[20px]"
+                  className="bg-[#f2496a] text-white px-5 py-3 font-medium rounded-[20px]"
                 >
                   Start Preparing Now
                 </button>
@@ -303,10 +307,10 @@ const NavBar = () => {
                     )
                   }
                 >
-                  <div className="bg-[#FE0000] h-8 w-8 rounded-full flex items-center justify-center p-1 text-white cursor-pointer ">
+                  <div className="bg-[#f2496a] h-8 w-8 rounded-full flex items-center justify-center p-1 text-white cursor-pointer ">
                     {userName?.slice(0, 1).toUpperCase()}
                   </div>
-                  <p className="text-[#FE0000] text-md ml-2 cursor-pointer">
+                  <p className="text-[#f2496a] text-md ml-2 cursor-pointer">
                     {!isEmpty(userName) && capitalizeFirstLetter(userName)}
                   </p>
                 </div>
@@ -319,7 +323,7 @@ const NavBar = () => {
               }}
             >
               <p
-                className={`${text}  text-[20px] font-semibold text-[#FE0000] mx-3 cursor-pointer my-1`}
+                className={`${text}  text-[20px] font-semibold text-[#f2496a] mx-3 cursor-pointer my-1`}
               >
                 Home
               </p>
@@ -336,7 +340,7 @@ const NavBar = () => {
                 }}
                 className="flex items-center mx-3 cursor-pointer"
               >
-                <p className="text-[#000000] text-[20px]">Exams we cover</p>
+                <p className="text-[#000000] text-[20px]">Resources</p>
                 {topLocationBar ? (
                   <GoChevronDown className="ml-1 text-[16px] rotate-180" />
                 ) : (
