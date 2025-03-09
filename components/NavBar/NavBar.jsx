@@ -26,32 +26,32 @@ const NavBar = () => {
     {
       title: "IELTS Writing Task 1",
       description: "Describe visual data clearly and accurately.",
-      link: "/cuet",
+      link: "/writing-task-1",
     },
     {
       title: "IELTS Writing Task 2",
       description: "Write essays expressing your opinions effectively.",
-      link: "/iit-jee",
+      link: "/writing-task-2",
     },
     {
       title: "IELTS Speaking",
       description: "Demonstrate fluency and pronunciation in a conversation.",
-      link: "/school-preparation",
+      link: "/speaking",
     },
     {
       title: "IELTS Listening",
       description: "Understand spoken English in various situations.",
-      link: "/neet",
+      link: "/listening",
     },
     {
       title: "IELTS Vocabulary",
       description: "Improve vocabulary for better IELTS performance.",
-      link: "/defence-exams",
+      link: "/vocabulary",
     },
     {
       title: "IELTS Reading",
       description: "Comprehend academic texts effectively.",
-      link: "/ielts-reading",
+      link: "/reading",
     },
   ];
 
@@ -192,8 +192,8 @@ const NavBar = () => {
         </div>
 
         {!isAuthenticated ||
-        (typeof window !== "undefined" &&
-          window.localStorage.getItem("USER_TYPE") === "2") ? (
+          (typeof window !== "undefined" &&
+            window.localStorage.getItem("USER_TYPE") === "2") ? (
           <div className=" md:flex hidden flex-row items-center gap-5">
             <button
               onClick={() => {
@@ -217,14 +217,14 @@ const NavBar = () => {
                     ? "/admin-dashboard/overview"
                     : typeof window !== "undefined" &&
                       window.localStorage.getItem("USER_TYPE") === "3"
-                    ? "/profile"
-                    : typeof window !== "undefined" &&
-                      window.localStorage.getItem("USER_TYPE") === "6"
-                    ? "/caller-dashboard/search"
-                    : typeof window !== "undefined" &&
-                      window.localStorage.getItem("USER_TYPE") === "7"
-                    ? "/caller-dashboard/search"
-                    : "/"
+                      ? "/profile"
+                      : typeof window !== "undefined" &&
+                        window.localStorage.getItem("USER_TYPE") === "6"
+                        ? "/caller-dashboard/search"
+                        : typeof window !== "undefined" &&
+                          window.localStorage.getItem("USER_TYPE") === "7"
+                          ? "/caller-dashboard/search"
+                          : "/"
                 )
               }
             >
@@ -249,9 +249,8 @@ const NavBar = () => {
             />
           </div>
           <div
-            className={`transition-all duration-300 ${
-              !isMenuOpen ? "translate-x-full" : "translate-x-0"
-            } w-[50vh] h-screen bg-white shadow-4xl  -right-2 top-0 p-5 rounded-r-xl z-50 fixed z-50`}
+            className={`transition-all duration-300 ${!isMenuOpen ? "translate-x-full" : "translate-x-0"
+              } w-[50vh] h-screen bg-white shadow-4xl  -right-2 top-0 p-5 rounded-r-xl z-50 fixed z-50`}
           >
             <div className="flex justify-between items-center">
               <Link legacyBehavior prefetch={false} href={"/"}>
@@ -271,8 +270,8 @@ const NavBar = () => {
               />
             </div>
             {!isAuthenticated ||
-            (typeof window !== "undefined" &&
-              window.localStorage.getItem("USER_TYPE") === "2") ? (
+              (typeof window !== "undefined" &&
+                window.localStorage.getItem("USER_TYPE") === "2") ? (
               <div className="mt-3 ">
                 <button
                   onClick={() => {
@@ -296,14 +295,14 @@ const NavBar = () => {
                         ? "/admin-dashboard/overview"
                         : typeof window !== "undefined" &&
                           window.localStorage.getItem("USER_TYPE") === "3"
-                        ? "/profile"
-                        : typeof window !== "undefined" &&
-                          window.localStorage.getItem("USER_TYPE") === "6"
-                        ? "/caller-dashboard/search"
-                        : typeof window !== "undefined" &&
-                          window.localStorage.getItem("USER_TYPE") === "7"
-                        ? "/caller-dashboard/search"
-                        : "/"
+                          ? "/profile"
+                          : typeof window !== "undefined" &&
+                            window.localStorage.getItem("USER_TYPE") === "6"
+                            ? "/caller-dashboard/search"
+                            : typeof window !== "undefined" &&
+                              window.localStorage.getItem("USER_TYPE") === "7"
+                              ? "/caller-dashboard/search"
+                              : "/"
                     )
                   }
                 >
@@ -356,11 +355,7 @@ const NavBar = () => {
                       <div
                         key={index}
                         onClick={(e) => {
-                          if (exam.link) {
-                            router.push(exam.link);
-                          } else {
-                            scrollToSection(exam.id);
-                          }
+                          router.push(exam.link);
                           e.stopPropagation();
                         }}
                         className="flex flex-col cursor-pointer pb-2"

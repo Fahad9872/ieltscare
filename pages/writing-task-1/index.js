@@ -14,7 +14,6 @@ import {
   FaLayerGroup,
 } from "react-icons/fa";
 import Carousel from "react-elastic-carousel";
-import { motion } from "framer-motion"; // For smooth animations
 
 const questionTypes = [
   {
@@ -22,49 +21,49 @@ const questionTypes = [
     name: "Bar Chart",
     icon: <FaChartBar />,
     description: "Compare values using bars.",
-    image: "/bar-chart.jpg",
+    image: "",
   },
   {
     id: 2,
     name: "Line Graph",
     icon: <FaChartLine />,
     description: "Show trends over time.",
-    image: "/line-graph.jpg",
+    image: "",
   },
   {
     id: 3,
     name: "Table",
     icon: <FaTable />,
     description: "Display structured data.",
-    image: "/table.jpg",
+    image: "",
   },
   {
     id: 4,
     name: "Pie Chart",
     icon: <FaChartPie />,
     description: "Show percentage distribution.",
-    image: "/pie-chart.jpg",
+    image: "",
   },
   {
     id: 5,
     name: "Process Diagram",
     icon: <FaCog />,
     description: "Illustrate step-by-step processes.",
-    image: "/process-diagram.jpg",
+    image: "",
   },
   {
     id: 6,
     name: "Map",
     icon: <FaMapMarkedAlt />,
     description: "Represent geographic information.",
-    image: "/map.jpg",
+    image: "",
   },
   {
     id: 7,
     name: "Multiple Graphs",
     icon: <FaLayerGroup />,
     description: "Combination of multiple data types.",
-    image: "/multiple-graphs.jpg",
+    image: "",
   },
 ];
 
@@ -81,7 +80,7 @@ const WritingTask1 = () => {
     <div className="md:max-w-[1400px] md:mx-auto">
       <NavBar />
 
-      <div className="text-center mb-12 px-6">
+      <div className="text-center py-16 px-6  bg-purple-50">
         <h1 className="text-5xl font-extrabold tracking-wide drop-shadow-lg">
           IELTS Writing Task 1
         </h1>

@@ -64,7 +64,7 @@ const WritingTask2 = () => {
   return (
     <div className="md:max-w-[1400px] md:mx-auto">
       <NavBar />
-      <div className="text-center mb-12 px-6">
+      <div className="text-center py-16 px-6  bg-purple-50 ">
         <h1 className="text-5xl font-extrabold tracking-wide drop-shadow-lg">
           IELTS Writing Task 2
         </h1>
